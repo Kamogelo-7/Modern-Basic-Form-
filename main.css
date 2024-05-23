@@ -65,11 +65,11 @@ h2 {
   font-size: 2rem;
   font-weight: bold;
   font-style: oblique;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
   color: red;
   text-transform: capitalize;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  bottom: 0;
+  top: 0;
   position: fixed;
   transition: 1s;
 }
