@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bodyBg-color: hsl(0, 0%, 5%);
+  --h2-color: hsl(0, 0%, 100%);
+}
+body {
+  background-image: url(images/pexels-harun-tan-2311991-3980364.jpg);
+  background-color: var(--bodyBg-color);
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding-bottom: 19px;
+}
+
+main {
+  flex-grow: 1;
+
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  flex-shrink: 2;
+  border-radius: 15px;
+  border-style: solid;
+  height: 55vh;
+  backdrop-filter: blur(5px);
+  max-width: fit-content;
+  background-color: transparent;
+  padding: 2rem;
+  transition: 2s;
+}
+
+h1:hover {
+  text-shadow: hsl(0, 100%, 50%) 2px 3px 4px;
+}
+
+form:hover {
+  border-bottom-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-top-color: hsl(72, 20%, 95%);
+  border-left-color: hsl(72, 20%, 95%);
+  box-shadow: hsl(0, 99%, 34%) 5px 8px 5px;
+}
+h1 {
+  color: var(--h2-color);
+  text-align: center;
+  transition: 1s;
+  margin: 7%;
+  text-transform: capitalize;
+}
+address {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: oblique;
+  margin-top: 5rem;
+  color: red;
+  text-transform: capitalize;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  top: 0;
+  position: fixed;
+  transition: 1s;
+}
+h2:hover {
+  color: white;
+}
+span {
+  transition: 1s;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+span:hover {
+  color: red;
+}
+.flex {
+  transition: 1s;
+  margin-right: 5.5rem;
+}
+.flex:hover {
+  color: red;
+}
+.flexx {
+  transition: 1s;
+  margin-right: 7.3rem;
+}
+.flexx:hover {
+  color: red;
+}
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  bottom: 50%;
+  color: rgb(0, 0, 0);
+  height: 2px;
+  width: 3px;
+  margin-left: 7rem;
+  transition: 1s;
+  font-size: 21px;
+}
+.material-symbols-outlined:hover {
+  color: rgb(255, 0, 0);
+}
+#check {
+  margin: 0;
+  margin-right: 5px;
+}
+input {
+  margin: 7px;
+  margin-left: 4px;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border-style: none;
+  max-width: 310px;
+}
+
+#forgot {
+  margin-top: 2rem;
+  display: flex;
+}
+#register {
+  margin-top: 2rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: progress;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 55px;
+  background-color: hsl(0, 0%, 100%);
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4px;
+  margin-bottom: 10px;
+  border-style: none;
+}
+#login {
+  color: black;
+}
+label,
+p {
+  font-size: medium;
+  color: white;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: hsl(0, 100%, 50%);
+}
+#space {
+  margin-left: 5px;
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    background-image: url(images/pexels-harun-tan-2311991-3980364.jpg);
+    background-color: var(--bodyBg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    scrollbar-width: none;
+  }
+  h2 {
+    margin-top: 2rem;
+  }
+  main {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: hsl(300, 1%, 45%);
+    box-shadow: black 5px 8px 5px;
+    height: 50vh;
+    backdrop-filter: blur(5px);
+    max-width: fit-content;
+    background-color: transparent;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    background-image: url(images/pexels-harun-tan-2311991-3980364.jpg);
+    background-color: var(--bodyBg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    padding-bottom: 19px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  form {
+    margin-top: 1rem;
+
+    border-radius: 15px;
+    border-style: solid;
+    border-color: hsl(300, 1%, 45%);
+    box-shadow: black 5px 8px 5px;
+    height: 55vh;
+    backdrop-filter: blur(5px);
+    max-width: fit-content;
+    background-color: transparent;
+    padding: 2rem;
+  }
+}
+@media (max-width: 1180px) {
+  html {
+    background-image: url(images/pexels-harun-tan-2311991-3980364.jpg);
+    background-color: var(--bodyBg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding-bottom: 19px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    margin-top: 2rem;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: hsl(300, 1%, 45%);
+    box-shadow: black 5px 8px 5px;
+    height: 65vh;
+    backdrop-filter: blur(5px);
+    max-width: fit-content;
+    background-color: transparent;
+    padding: 2rem;
+  }
+}
+
+/*Toggle Feature for JS */
+
+.inputbox {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 75px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 0%);
+  padding: 0;
+}
+#togglePassword:hover {
+  color: rgb(255, 0, 0);
+}
+#togglePassword:focus {
+  outline: none;
+}
+
+#toggleIcon {
+  font-family: Arial, Helvetica, sans-serif;
+}

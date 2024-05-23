@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form design</title>
+    <script
+      src="https://kit.fontawesome.com/8870ebe433.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <h2>designed by: <span>Enoch M</span></h2>
+      <form>
+        <h1>login</h1>
+        <div class="inputbox">
+          <span class="material-symbols-outlined">stacked_email</span>
+          <label class="flexx" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            aria-placeholder="Enter email"
+            placeholder="Enter email"
+            rel="noopener"
+          />
+        </div>
+        <div class="inputbox">
+          <span class="material-symbols-outlined" id="togglePassword"
+            >visibility</span
+          >
+          <label class="flex" for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            aria-placeholder="Enter password"
+            placeholder="Enter password"
+            spellcheck="true"
+          />
+        </div>
+        <div id="forgot">
+          <input id="check" type="checkbox" name="checkbox" /><br />
+          <label for="check">Remember me</label><br />
+          <a id="space" href="#">forgot password</a>
+        </div>
+        <div id="register">
+          <button type="submit">
+            <a
+              id="login"
+              href="https://frontendflair.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+              >login</a
+            >
+          </button>
+          <p>
+            Don't have an account yet?
+            <a href="https://kamogelo-7.github.io/html-intermediate-form/"
+              >register</a
+            >
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
